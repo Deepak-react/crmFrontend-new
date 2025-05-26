@@ -82,27 +82,25 @@ const teamList = [...new Set(team_members) ].map(name => ({ name }));
               Back
             </button>
           </div>
-          <div className="space-y-3">
-            {teamList.map((member, index) => (
-              <div
-                key={index}
-                className="flex items-center justify-between p-3 bg-gray-50 rounded-md hover:bg-gray-100"
-              >
-                <div className="flex items-center space-x-3">
-                  <div className="w-9 h-9 bg-blue-100 text-blue-800 rounded-full flex items-center justify-center font-semibold">
-                    {member.name.charAt(0)}
-                  </div>
-                  <div>
-                    <p className="text-sm font-medium text-gray-800">
-                      {member.name}
-                    </p>
-                    <p className="text-xs text-gray-500">Team Member</p>
-                  </div>
-                </div>
-                
-              </div>
-            ))}
-          </div>
+        <div className="max-h-60 overflow-y-auto space-y-3 scrollbar-thin scrollbar-thumb-gray-400 scrollbar-track-gray-200">
+  {teamList.map((member, index) => (
+    <div
+      key={index}
+      className="flex items-center justify-between p-3 bg-gray-50 rounded-md hover:bg-gray-100"
+    >
+      <div className="flex items-center space-x-3">
+        <div className="w-9 h-9 bg-blue-100 text-blue-800 rounded-full flex items-center justify-center font-semibold">
+          {member.name.charAt(0)}
+        </div>
+        <div>
+          <p className="text-sm font-medium text-gray-800">{member.name}</p>
+          <p className="text-xs text-gray-500">Team Member</p>
+        </div>
+      </div>
+    </div>
+  ))}
+</div>
+
         </div>
       </div>
     </div>

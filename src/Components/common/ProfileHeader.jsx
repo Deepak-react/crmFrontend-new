@@ -24,7 +24,7 @@ export default function ProfileHeader() {
         const parsedUser = JSON.parse(userData);
         setProfile({
           name: parsedUser?.cFull_name || 'User',
-          email: parsedUser?.email || '',
+          email: parsedUser?.email || 'Not available',
           team: parsedUser?.team || 'NA'
         });
         setUserRole(parsedUser?.irole_id || 'NA');
@@ -62,10 +62,6 @@ export default function ProfileHeader() {
     document.body.style.overflow = 'hidden';
   };
 
-  const createUser=()=>{
-    navigate('/users')
-  }
-
   const handleLeadFormClose = () => {
     setShowLeadForm(false);
     document.body.style.overflow = 'auto';
@@ -102,15 +98,16 @@ export default function ProfileHeader() {
         + Create Lead
       </button>
 
-     {showLeadForm && (
-  <div className="fixed inset-0 z-20 bg-black bg-opacity-50 flex justify-center items-center">
-    <div className="bg-white p-6 rounded-xl shadow-lg w-3/4 max-h-[80vh] overflow-y-auto transition-all duration-300 ease-in-out slide-in-right">
-      <LeadForm onClose={handleLeadFormClose} />
-    </div>
-  </div>
-)}
+      {showLeadForm && (
+        <div className="fixed inset-0 z-20 bg-transparent bg-opacity-50 mt-14 flex justify-end items-start">
+          <div className="bg-white p-2 rounded-xl shadow-lg w-3/2 max-h-[80vh] overflow-y-scroll transition-all duration-300 ease-in-out slide-in-right">
+            <LeadForm onClose={handleLeadFormClose} />
+          </div>
+        </div>
+      )}
 
-    <div className="relative" ref={notificationRef}>
+      <div className="relative" ref={notificationRef}>
+
         <Bell
           onClick={toggleNotifications}
           className="w-10 h-10 border rounded-full p-2 text-blue-600 cursor-pointer"
@@ -166,7 +163,7 @@ export default function ProfileHeader() {
         </div>
 
         {showDropdown && (
-          <div className="absolute right-0 mt-[180px] w-64 bg-white shadow-lg rounded-lg p-4 text-sm z-50">
+          <div className="absolute right-0 mt-2 w-64 bg-white shadow-lg rounded-lg p-4 text-sm z-50">
             <div className="font-bold text-gray-800">{profile.name}</div>
             <div className="text-gray-500">Role: {userRole}</div>
             <hr className="my-2" />

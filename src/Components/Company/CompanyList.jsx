@@ -4,7 +4,7 @@ import CompanyCard from '@/Components/Company/CompanyCard';
 import CompanyRow from '@/Components/Company/CompanyRow';
 import { LayoutGrid, List, Plus } from 'lucide-react';
 
-const API_URL = 'http://192.168.0.107:3000/api/company';
+const API_URL = import.meta.env.VITE_API_URL;
 
 const CompanyList = () => {
   const [companies, setCompanies] = useState([]);
