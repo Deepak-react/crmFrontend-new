@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import CompanyForm from '@/Components/Company/CompanyForm';
-import CompanyCard from '@/components/Company/CompanyCard';
-import CompanyRow from '@/components/Company/CompanyRow';
+import CompanyCard from '@/Components/Company/CompanyCard';
+import CompanyRow from '@/Components/Company/CompanyRow';
 import { LayoutGrid, List, Plus } from 'lucide-react';
 
 const API_URL = 'http://192.168.0.107:3000/api/company';

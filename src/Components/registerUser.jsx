@@ -126,7 +126,7 @@ const token = localStorage.getItem("token")
             cUser_name: formData.employeeName,
             cEmail: formData.email,
             cPassword: formData.password,
-            iCompany_id: 5,
+            iCompany_id: 1,
             irole_id: 1,
             cjob_title: formData.jobTitle,
             reports_to: parseInt(formData.reportsTo),

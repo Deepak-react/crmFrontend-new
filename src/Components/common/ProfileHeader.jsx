@@ -110,17 +110,7 @@ export default function ProfileHeader() {
   </div>
 )}
 
- <button
-        onClick={createUser}
-        className="relative inline-flex items-center gap-2 px-5 py-2 rounded-full text-blue-600 font-semibold bg-white border border-black bg-clip-padding focus:outline-none"
-      >
-        +  User
-      </button>
-
-
-
-
-      <div className="relative" ref={notificationRef}>
+    <div className="relative" ref={notificationRef}>
         <Bell
           onClick={toggleNotifications}
           className="w-10 h-10 border rounded-full p-2 text-blue-600 cursor-pointer"

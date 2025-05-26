@@ -118,8 +118,7 @@ const Comments = () => {
 
         return;
       }
-      alert("✅ Comment updated successfully!");
-      showPopup("Success", "✅ Comment updated successfully!!", "success")
+            showPopup("Success", "✅ Comment updated successfully!!", "success")
 
 
       setEditingId(null);
