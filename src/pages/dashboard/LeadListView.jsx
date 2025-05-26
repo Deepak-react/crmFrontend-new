@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import ProfileHeader from '@/components/common/ProfileHeader';
-import LeadToolbar from '@/components/dashboard/LeadToolbar';
+import ProfileHeader from '@/Components/common/ProfileHeader';
+import LeadToolbar from '@/Components/dashboard/LeadToolbar';
 import { ENDPOINTS } from '../../api/constraints';
 import Loader from '../../Components/common/Loader';
 
