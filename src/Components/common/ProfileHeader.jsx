@@ -107,6 +107,7 @@ export default function ProfileHeader() {
       )}
 
       <div className="relative" ref={notificationRef}>
+
         <Bell
           onClick={toggleNotifications}
           className="w-10 h-10 border rounded-full p-2 text-blue-600 cursor-pointer"

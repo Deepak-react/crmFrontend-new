@@ -65,7 +65,7 @@ export default function DealsTable({data}) {
               <th className="py-2 px-2">Name</th>
               <th className="py-2 px-2">Status</th>
               <th className="py-2 px-2">Assigned To</th>
-              <th className="py-2 px-2">Modified by</th>
+             {/* <th className="py-2 px-2">Modified by</th> */}
             </tr>
           </thead>
           <tbody>
@@ -88,7 +88,7 @@ export default function DealsTable({data}) {
                     <span className="truncate max-w-[80px] block">{deal.assignedTo}</span>
                   </div>
                 </td>
-                <td className="py-2 px-2 whitespace-nowrap">
+ {/*               <td className="py-2 px-2 whitespace-nowrap">
                   <div className="flex items-center gap-2">
                     <img
                       src={deal.avatar}
@@ -100,7 +100,7 @@ export default function DealsTable({data}) {
                       <span className="text-gray-400 text-xs truncate max-w-[120px] block">{deal.time}</span>
                     </div>
                   </div>
-                </td>
+                </td> */}
               </tr>
             ))}
             {filteredDeals.length === 0 && (

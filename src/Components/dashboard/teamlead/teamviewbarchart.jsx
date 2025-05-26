@@ -37,6 +37,7 @@ export default function LeadManagementCard({ leads, team_members }) {
 
 const teamList = [...new Set(team_members) ].map(name => ({ name }));
 
+
   return (
     <div className="relative w-full h-80 max-w-full mx-auto [perspective:1000px]">
       <div
@@ -99,6 +100,7 @@ const teamList = [...new Set(team_members) ].map(name => ({ name }));
     </div>
   ))}
 </div>
+
         </div>
       </div>
     </div>

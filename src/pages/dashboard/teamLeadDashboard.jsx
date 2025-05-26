@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from "react";
   import { ENDPOINTS  } from "../../api/constraints";
-  import ProfileHeader from "@/components/common/ProfileHeader";
-  import TeamleadHeader from "@/components/dashboard/teamlead/tlHeader";
-  import KPIStats from "@/components/dashboard/teamlead/tlKPIcards";
+  import ProfileHeader from "@/Components/common/ProfileHeader";
+  import TeamleadHeader from "@/Components/dashboard/teamlead/tlHeader";
+  import KPIStats from "@/Components/dashboard/teamlead/tlKPIcards";
 
-  import RemindersCard from "@/components/dashboard/teamlead/tlremindercard";
-  import LeadsTable from "@/components/dashboard/teamlead/tlLeadcard";
-  import DealsTable from "@/components/dashboard/teamlead/tlDealcard";
+  import RemindersCard from "@/Components/dashboard/teamlead/tlremindercard";
+  import LeadsTable from "@/Components/dashboard/teamlead/tlLeadcard";
+  import DealsTable from "@/Components/dashboard/teamlead/tlDealcard";
  
 
   const LeadsDashboard = () => {

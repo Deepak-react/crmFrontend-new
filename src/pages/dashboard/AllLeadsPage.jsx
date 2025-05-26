@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from 'react';
-import ProfileHeader from '@/components/common/ProfileHeader';
-// import LeadToolbar from '@/components/dashboard/LeadToolbar';
+import ProfileHeader from '@/Components/common/ProfileHeader';
+// import LeadToolbar from '@/Components/dashboard/LeadToolbar';
 import LeadToolbar from '../../Components/dashboard/LeadToolbar';
 import LeadCardView from './LeadcardView';
-// import LeadCardView from '@/components/dashboard/LeadCardView';
+// import LeadCardView from '@/Components/dashboard/LeadCardView';
 // import LeadCardView from './LeadcardView';
 // import LeadCardView from './LeadcardView';
-// import LeadListView from '@/components/dashboard/LeadListView';
-import LeadForm from '@/components/LeadForm';
+// import LeadListView from '@/Components/dashboard/LeadListView';
+import LeadForm from '@/Components/LeadForm';
 
 const AllLeadsPage = () => {
   const [leads, setLeads] = useState([]);
